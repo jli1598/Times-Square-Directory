@@ -1,0 +1,218 @@
+<!doctypehtml>
+<html>
+	<head>
+		
+		<title> GALLERY | TIMES SQUARE </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet'>
+		<style>
+		body, html {
+			height: 100%;
+			margin:10px;
+		}
+		.tabs{
+			font-family: Times New Roman;
+			font-size: 15px;
+		}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			opacity: 0.6;
+			filter: alpha(opacity=50); 
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 13px;
+		}
+
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			font-weight: bold;
+			color: #DCDCDC;
+			display: block;
+			transition: 0.3s;
+		}
+		.textnav{
+			padding: 8px 8px 8px 32px;
+			font-family: 'Sancreek';
+			color: #E3D6AA;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.sidenav a:hover {
+			color: #FF4136;
+		}
+		.sidenav .closebtn{
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 70px;
+			margin-left: 50px;
+		}
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+		}
+
+		.header {
+			text-align: center;
+			font-size: 55px;
+			font-family: Gotham, Tahoma, sans-serif;
+			letter-spacing: 0.9cm;
+			padding: 2px;
+			background-color:  #ffcccc;
+		}
+		.pic{
+			box-sizing: border-box;
+		}
+		.row {
+			display: -ms-flexbox; /* IE10 */
+			display: flex;
+			-ms-flex-wrap: wrap; /* IE10 */
+			flex-wrap: wrap;
+			margin: 10px;
+			padding: 5px;
+		}
+		.column {
+			-ms-flex: 25%; /* IE10 */
+			flex: 47%;
+			max-width: 50%;
+			padding:21px;
+		}
+
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+		}
+		@media screen and (max-width: 800px) {
+			.column {
+				-ms-flex: 50%;
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.column {
+				-ms-flex: 100%;
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+		</style>
+		
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<br><br><br><div class = "textnav">
+						<p> MENU </p>
+					</div>
+				<div class="tabs">
+					<a href="index.html">Home</a><br>
+					<br><a href="about.html">About</a><br>
+					<br><a href="gallery.html">Gallery</a><br>
+					<br><a href="entertainment.html">Entertainment</a><br>
+					<br><a href="hotels.html">Hotels</a><br>
+					<br><a href="restaurants.html">Restaurants</a></br>
+					<br><a href="tips.html">Tourist Tips</a><br>
+					<br><a href="help.html">Help & FAQ</a>
+				</div>
+		</div>
+		<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<br><br><br>
+		<div class="header">
+			<h1>GALLERY</h1>
+		</div>
+		<br><br><br>
+		<!-- Photo Grid -->
+		<div class="pic">
+			<div class="row"> 
+				<div class="column">
+					<img src="g1.jpg" style="width:100%">
+					<img src="g2.jpg" style="width:100%">
+					<img src="g3.jpg" style="width:100%">
+					<img src="g4.jpg" style="width:100%">
+					<img src="g5.jpg" style="width:100%">
+				</div>
+				<div class="column">
+					<img src="g6.jpg" style="width:100%">
+					<img src="g7.jpg" style="width:100%">
+					<img src="g8.jpg" style="width:100%">
+					<img src="g9.jpg" style="width:100%">
+					<img src="g10.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g11.jpg" style="width:100%">
+					<img src="g12.jpg" style="width:100%">
+					<img src="g13.jpg" style="width:100%">
+					<img src="g14.jpg" style="width:100%">
+					<img src="g15.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g16.jpg" style="width:100%">
+					<img src="g17.jpg" style="width:100%">
+					<img src="g18.jpg" style="width:100%">
+					<img src="g19.jpg" style="width:100%">
+					<img src="g20.jpg" style="width:100%">
+				</div>
+				<div class="column">
+					<img src="g21.jpg" style="width:100%">
+					<img src="g22.jpg" style="width:100%">
+					<img src="g23.jpg" style="width:100%">
+					<img src="g24.jpg" style="width:100%">
+					<img src="g25.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g26.jpg" style="width:100%">
+					<img src="g27.jpg" style="width:100%">
+					<img src="g28.jpg" style="width:100%">
+					<img src="g29.jpg" style="width:100%">
+					<img src="g30.jpg" style="width:100%">
+					<img src="g30b.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g31.jpg" style="width:100%">
+					<img src="g32.jpg" style="width:100%">
+					<img src="g33.jpg" style="width:100%">
+					<img src="g34.jpg" style="width:100%">
+					<img src="g35.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g36.jpg" style="width:100%">
+					<img src="g37.jpg" style="width:100%">
+					<img src="g38.jpg" style="width:100%">
+					<img src="g39.jpg" style="width:100%">
+					<img src="g40.png" style="width:100%">
+					<img src="g40b.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g41.jpg" style="width:100%">
+					<img src="g42.jpg" style="width:100%">
+					<img src="g43.jpg" style="width:100%">
+					<img src="g44.jpg" style="width:100%">
+					<img src="g45.jpg" style="width:100%">
+				</div>  
+				<div class="column">
+					<img src="g46.jpg" style="width:100%">
+					<img src="g47.jpg" style="width:100%">
+					<img src="g48.jpg" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

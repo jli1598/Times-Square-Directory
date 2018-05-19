@@ -1,0 +1,177 @@
+<!doctypehtml>
+<html>
+	<head>
+		
+		<title> ABOUT | TIMES SQUARE </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet'>
+		<style>
+		body, html {
+			height: 100%;
+			margin:10px;
+		}
+		.tabs{
+			font-family: Times New Roman;
+			font-size: 15px;
+		}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			opacity: 0.6;
+			filter: alpha(opacity=50); 
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 13px;
+		}
+
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			font-weight: bold;
+			color: #DCDCDC;
+			display: block;
+			transition: 0.3s;
+		}
+		.textnav{
+			padding: 8px 8px 8px 32px;
+			font-family: 'Sancreek';
+			color: #E3D6AA;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.sidenav a:hover {
+			color: #FF4136;
+		}
+		.sidenav .closebtn{
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 70px;
+			margin-left: 50px;
+		}
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+		}
+		.header {
+			text-align: center;
+			font-size: 55px;
+			font-family: Gotham, Tahoma, sans-serif;
+			letter-spacing: 0.9cm;
+			padding: 10px;
+			background-color: #ccccff;
+		}
+		*:before, *:after {
+			box-sizing: inherit;
+		}
+		.pic{
+			box-sizing: border-box;
+		}
+		.column {
+			float: left;
+			width: 30%;
+			margin-bottom: 10px;
+			margin: 10px;
+			padding: 12px;
+		}
+
+		@media screen and (max-width: 650px) {
+			.column {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.container {
+			padding: 0 16px;
+		}
+	
+		.container::after, .row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.title {
+			color: #404040;
+			font-weight: bold;
+		}
+		</style>
+		
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+		
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<br><br><br><div class = "textnav">
+					<p> MENU </p>
+				</div>
+			<div class="tabs">	
+				<a href="index.html">Home</a><br>
+				<br><a href="about.html">About</a><br>
+				<br><a href="gallery.html">Gallery</a><br>
+				<br><a href="entertainment.html">Entertainment</a><br>
+				<br><a href="hotels.html">Hotels</a><br>
+				<br><a href="restaurants.html">Restaurants</a></br>
+				<br><a href="tips.html">Tourist Tips</a><br>
+				<br><a href="help.html">Help & FAQ</a>
+			</div>
+		</div>
+		<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<br><br><br>
+		<div class="header">	
+			<h2>MEET THE EDITORS</h2>
+		</div>
+		<br><br><br><br><br>
+	<div class="pic">
+		<div class="row">
+			<div class="column">
+				<div class="card">
+					<img src="person1.png" alt="Jessica" style="width:100%" width="100">
+						<div class="container">
+							<center><h2>Jessica Li</h2>
+							<p class="title">CSS Contributor</p></center>
+						</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<img src="person2.jfif" alt="Ashley" style="width:100%" width="100">
+						<div class="container">
+							<center><h2>Ashley Allen</h2>
+							<p class="title">CSS & Film Editor</p></center>			
+						</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<img src="person3.png" alt="Inhye" style="width:100%" width="100">
+						<div class="container">
+							<center><h2>Inhye Jeon</h2>
+							<p class="title">Script Editor</p></center>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

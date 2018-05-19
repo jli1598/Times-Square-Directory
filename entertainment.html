@@ -1,0 +1,354 @@
+<!doctypehtml>
+<html>
+	<head>
+		<title> ENTERTAINMENT | TIMES SQUARE </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet'>
+		<style>
+		body, html {
+			height: 100%;
+			margin:10px;
+		}
+		.tabs{
+			font-family: Times New Roman;
+			font-size: 15px;
+		}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			opacity: 0.6;
+			filter: alpha(opacity=50); 
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 13px;
+		}
+
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			font-weight: bold;
+			color: #DCDCDC;
+			display: block;
+			transition: 0.3s;
+		}
+		.textnav{
+			padding: 8px 8px 8px 32px;
+			font-family: 'Sancreek';
+			color: #E3D6AA;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.sidenav a:hover {
+			color: #FF4136;
+		}
+		.sidenav .closebtn{
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 70px;
+			margin-left: 50px;
+		}
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+		}
+		.btn {
+			border: none;
+			color: white;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			}
+		.header {
+			text-align: center;
+			font-size: 55px;
+			font-family: Gotham, Tahoma, sans-serif;
+			letter-spacing: 0.9cm;
+			padding: 2px;
+			background-color:  #cceeff;
+		}
+		.mySlides {display: none}
+			img {vertical-align: middle;}
+
+			/* Slideshow container */
+			.slideshow-container {
+				max-width: 1320px;
+				position: relative;
+				margin: auto;
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -22px;
+				color: DarkBlue;
+				font-weight: bold;
+				font-size: 30px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+				background-color: rgba(0,0,0,0.8);
+			}
+
+
+			/* The dots/bullets/indicators */
+			.dot {
+				cursor: pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+				background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: .5s;
+				animation-name: fade;
+				animation-duration: .5s;
+			}
+
+			@-webkit-keyframes fade {
+				from {opacity: .4} 
+				to {opacity: 1}
+			}
+
+			@keyframes fade {
+				from {opacity: .4} 
+				to {opacity: 1}
+			}
+			.h4{
+				font-family: Times New Roman;
+				font-size: 4px;
+				font-weight:bold;
+			}
+			#name{
+				font-family: Times New Roman;
+				height:17px;
+				font-size: 20px;
+				font-weight: bold;
+				margin:15px;
+				padding:15px;
+			}
+			#searchButton{
+				font-family: Times New Roman;
+				height:50px;
+				font-size: 20px;
+				font-weight: bold;
+				margin:15px;
+				padding:13px;
+			}
+			.entertainment{
+				width:530px;
+				margin:53px;
+				display:inline-block;
+				border: 10px solid gray;
+				background-color: #A2A2D0;
+				padding: 40px;
+				text-align: center;
+				font-family: Times New Roman;
+				font-size: 18px;
+				font-weight: bold:
+				
+			}
+			h1{
+				font-family:Times New Roman;
+				text-shadow:gray 2px 2px 2px;
+				text-transform: uppercase;
+			}
+		
+
+		</style>
+		
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides fade");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display="block";  
+			dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+		<script type = "text/template" id = "cardTemplate">
+			<div class = 'entertainment'>
+				<h1> {{company_name}} </h1>
+				<p> {{subindustry}} </p><hr>
+				<p> {{address}}</p><hr>
+				<p> {{phone}} </p><hr>
+				Location: <a href='https://www.google.com/maps/search/ + {{address}} + /"'>{{company_name}}</a><hr>
+				<a href="{{website}}/">{{website}}</a>
+			</div>
+		</script>
+		<script>
+		var data="";
+
+	
+		function loadJSON(){
+			$.getJSON("https://data.cityofnewyork.us/resource/2pc8-n4xe.json", function(results){
+				data = results;
+			})
+		}
+		
+
+		function search(){
+			var build = "";
+			
+			var name = document.getElementById("name");
+			var output = document.getElementById("output");
+			var cardTemplate = document.getElementById("cardTemplate").innerHTML;
+	
+			for(var index = 0; index < data.length; index++){
+				try{
+					if(data[index].company_name.toUpperCase().indexOf(name.value.toUpperCase()) != -1){
+						build += Mustache.render(cardTemplate, data[index]);
+					}
+				}
+				catch(err){
+					console.log("error");
+				}
+			}
+			output.innerHTML = build;
+		}
+		</script>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<br><br><br><div class = "textnav">
+					<p> MENU </p>
+				</div>
+			<div class="tabs">	
+				<a href="index.html">Home</a><br>
+				<br><a href="about.html">About</a><br>
+				<br><a href="gallery.html">Gallery</a><br>
+				<br><a href="entertainment.html">Entertainment</a><br>
+				<br><a href="hotels.html">Hotels</a><br>
+				<br><a href="restaurants.html">Restaurants</a></br>
+				<br><a href="tips.html">Tourist Tips</a><br>
+				<br><a href="help.html">Help & FAQ</a>
+			</div>
+		</div>
+		<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<br><br><br>
+		<div class="header">	
+			<h2>ENTERTAINMENT</h2>
+		</div>
+		<br><br><br><br><br>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<img src="ent1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="ent2.jpg" style="width:100%">
+			</div>
+	
+			<div class="mySlides fade">
+				<img src="ent3.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="ent4.jpg" style="width:100%">
+			</div>
+	
+			<div class="mySlides fade">
+				<img src="ent5.jpg" style="width:100%">
+			</div>
+	
+			<div class="mySlides fade">
+				<img src="ent6.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="ent7.jpg" style="width:100%">
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			<span class="dot" onclick="currentSlide(4)"></span> 
+			<span class="dot" onclick="currentSlide(5)"></span> 
+			<span class="dot" onclick="currentSlide(6)"></span>
+			<span class="dot" onclick="currentSlide(7)"></span> 
+		</div>
+	<center><h6> [ Note: Click on a circle to activate the images & use the arrows to browse through them ] </h6></center><br><br>
+	</body>
+	<body onload="loadJSON()">
+	<center><div class="searchButton">	
+		<input type="text" id="name" placeholder="  Name of Entertainment Spot" size="45">
+		<button onclick="search()" id="searchButton">SEARCH</button>
+	</div></center>
+	<br><br><br>
+		<div id="output">
+			<center><div class = "entertainment">
+				<center><h1> NAME OF ENTERTAINMENT CENTER</h1>
+				<p> Type of Industry </p><hr>
+				<p> Address </p><hr>
+				<p> Phone Number </p><hr>
+				<p> Location </p><hr>
+				<p> Website </p></center>
+			</div></center>
+		</div>
+	</body>
+</html>
